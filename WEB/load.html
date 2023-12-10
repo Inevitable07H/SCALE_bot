@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function preventBack() {
+            window.history.forward();
+        }
+    </script>
+<style>
+#home
+{
+	min-width:100%;
+	max-width:100%;
+}
+</style>
+</head>
+<body>
+    <script> function redirect(){
+        document.location="load2.html";}
+        </script>
+
+    <video autoplay id="home" onended="redirect()">
+    <source src="load.mp4" type=" video/mp4">
+    </video>
+</body>
+</html>

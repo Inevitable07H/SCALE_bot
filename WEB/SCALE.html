@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        SCALE
+    </title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            min-height: 100vh;
+            font-family: 'Jost',sans-serif;
+            background:linear-gradient(to bottom,#0f0c29,#2b5e63,#243c3e)
+        }
+        #img{   
+            height:300px;
+            width:300px;
+        }
+        .ip{
+            height:40px;
+            margin:10px auto;
+            justify-content: center;
+            display: block;;
+            color:rgb(0, 0, 0);
+            background:#bbeff4;
+            font-size: 1em;
+            font-weight:bold;
+            margin-top: 20px;
+            outline:none;
+            border:none;
+            border-radius:5px;
+        }
+        #sub
+{
+	background-color:rgb(254, 255, 255) ;
+	font-weight:900;
+	font-size:20px;
+	border-radius:20px;
+	border-color:rgb(76, 149, 143);
+	border-width: 6px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    </style>
+</head>
+<body id="next">
+    <form>
+    <table align="center">
+        <tr>
+            <td>
+                <img src="SCALE(IMG).jpg" id="img">
+            </td>
+        </tr>
+     </table> <br>   
+     
+    <input type="text" class="ip" size="85px" id="getp" placeholder="TYPE YOUR QUERY">
+    
+    <script>
+        function scalep()
+		{
+			
+			let inp=document.getElementById("getp").value;
+            let x1=inp.toLowerCase();
+			
+            let x;
+			if(x1=='define pythagoras theorem')
+			{
+				x=document.location="sol1.html";
+			}
+            else if(x1=='3x+2y=5 and x+y=13 find x')
+            {
+                x=document.location="sol2.html";
+            }
+			else
+			{
+				alert("SORRY CAN'T ANSWER BECAUSE, WE ARE STILL ON DEVELOPING-MODE");
+			}
+			document.getElementById("next").innerHTML=x;
+			
+		}
+    </script>
+    <table align="center">
+        <tr>
+            <td>
+                <button onclick="scalep()" id="sub">>
+            </td>
+        </tr>
+     </table> <br>  
+   
+</form>
+</body>
+</html>
